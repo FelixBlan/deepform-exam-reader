@@ -1,0 +1,43 @@
+# === Caches Python ===
+__pycache__/
+*.pyc
+*.pyo
+
+# === Données volumineuses (présentes localement, non versionnées) ===
+emnist_data/
+*.zip
+
+# === Jeux de données générés pour l'affinage (fine-tuning) ===
+letter_dataset.npz
+digit_dataset.npz
+dataset_preview.png
+
+# === Sorties générées par le pipeline (régénérées par main.py) ===
+EXAM_*_RESULTS/
+calibration_output/
+PROJECT 2026 -DATABASE-20260518
+
+# === Logs / images de debug régénérables ===
+*.log
+debug/
+.trash/
+/_dbg_exam.png
+/compare_results.csv
+/block_*.png
+/p6_block_*.png
+/codes_*.png
+/crypto_*.png
+/header_hd.png
+/full_page_p1.png
+/top_band.png
+/top_section_full.png
+/exam_page*.png
+/brouillon_max_roi.png
+/emnist_orientation.png
+
+# === Système ===
+.DS_Store
+Thumbs.db
+
+# NB : restent versionnés le template (utils/assets/form_template_ref.png),
+# les modèles entraînés (models/*.pt) et le rapport (rapport/*.docx, *.pdf).
